@@ -38,7 +38,7 @@ Throttling variable manipulation:
 ```js
 var test;
 var testFunc = function(arg) { test = arg; };
-var testFuncThrottled = throttleFrequency(funcTest, 500);
+var testFuncThrottled = throttleFrequency(testFunc, 500);
 
 testFuncThrottled('TEST 1!');
 console.log(test); // 'TEST 1!'
