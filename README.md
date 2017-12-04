@@ -45,7 +45,7 @@ console.log(test); // 'TEST 1!'
 
 setTimeout(function() {
   testFuncThrottled('TEST 2!');
-  console.log(test); // (after 501 ms) 'TEST 2!' 
+  console.log(test); // (after 501 ms) 'TEST 2!'
 }, 501);
 
 testFuncThrottled('TEST 3!');
