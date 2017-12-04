@@ -6,14 +6,11 @@
  * @return {function}       - wrapped func
  */
 module.exports = function throttleFrequency(func, delay, scope) {
-   var delay = delay || 500;
-   var scope = scope || this;
-   var busy  = false;
-
-   return function() {
-     if (busy) { return; }
-     busy = true;
-     setTimeout(function() { busy = false; }, delay);
-     func.apply(scope, [].slice.apply(arguments));
+  var busy, timer;
+  return function() {
+    if (busy || !(busy = true)) { return; }
+    func.apply(scope || this, [].slice.apply(arguments));
+    clearTimeout(timer);
+    timer = setTimeout(function() { busy = false; }, delay);
   };
 };
