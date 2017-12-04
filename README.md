@@ -1,4 +1,4 @@
-# Throttle frequency
+# Throttle Frequency
 
 Simple vanilla JavaScript tool to throttle execution frequency of any given function - time in milliseconds, no initial delay, optional scope declaration.
 
