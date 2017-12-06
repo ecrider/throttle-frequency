@@ -1,6 +1,6 @@
 {
   "name": "throttle-frequency",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Tool to throttle execution frequency of any given function - time in milliseconds, no initial delay, optional scope declaration.",
   "author": "Kuba Paczyński <kuba.paczynski@gmail.com>",
   "repository": "https://github.com/ecrider/throttle-frequency",
